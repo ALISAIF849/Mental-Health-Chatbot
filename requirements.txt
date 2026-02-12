@@ -1,0 +1,16 @@
+flask
+flask_sqlalchemy
+flask_login
+flask_bcrypt
+flask-cors
+transformers
+torch
+sentence-transformers
+faiss-cpu
+groq
+python-dotenv
+streamlit
+requests
+scikit-learn
+nltk
+numpy<2
