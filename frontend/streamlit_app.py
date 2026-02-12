@@ -1,8 +1,9 @@
 import streamlit as st
 import requests
 from datetime import datetime
+import os
 
-BASE_URL = "http://127.0.0.1:5000"
+BASE_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:5000")
 
 # Page config
 st.set_page_config(

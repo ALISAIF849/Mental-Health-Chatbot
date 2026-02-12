@@ -14,3 +14,4 @@ requests
 scikit-learn
 nltk
 numpy<2
+gunicorn
