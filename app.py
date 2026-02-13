@@ -1,10 +1,39 @@
 import streamlit as st
 import os
-from groq import Groq
-from transformers import pipeline
-from sentence_transformers import SentenceTransformer
-import faiss
-import numpy as np
+import sys
+
+# Show Python version for debugging
+print(f"Python version: {sys.version}", flush=True)
+
+try:
+    from groq import Groq
+    print("Groq imported successfully", flush=True)
+except Exception as e:
+    print(f"Error importing Groq: {e}", flush=True)
+
+try:
+    from transformers import pipeline
+    print("Transformers imported successfully", flush=True)
+except Exception as e:
+    print(f"Error importing transformers: {e}", flush=True)
+
+try:
+    from sentence_transformers import SentenceTransformer
+    print("SentenceTransformers imported successfully", flush=True)
+except Exception as e:
+    print(f"Error importing sentence_transformers: {e}", flush=True)
+
+try:
+    import faiss
+    print("FAISS imported successfully", flush=True)
+except Exception as e:
+    print(f"Error importing faiss: {e}", flush=True)
+
+try:
+    import numpy as np
+    print("NumPy imported successfully", flush=True)
+except Exception as e:
+    print(f"Error importing numpy: {e}", flush=True)
 
 # ==========================================
 # CONFIGURATION
